@@ -30,11 +30,35 @@
     background-size: auto 400px;
     display: flex;
     justify-content: flex-start;
-    padding: 90px 0;
+    padding-bottom: 90px;
+    padding-top: 90px;
+    @media (max-width: $size-tablet) {
+      padding-bottom: 45px;
+      padding-top: 45px;
+    }
 
     &.pos-right {
       background-position: left bottom;
       justify-content: flex-end;
+    }
+    &.with-background {
+      @media (max-width: $size-tablet) {
+        background-position: center bottom;
+        background-size: auto 300px;
+        padding-bottom: 345px;
+        &.pos-right {
+          background-position: center bottom;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+  @media (max-width: $size-mobile) {
+    .el-button,
+    .el-button__green {
+      box-sizing: border-box;
+      text-align: center;
+      width: 100%;
     }
   }
 }

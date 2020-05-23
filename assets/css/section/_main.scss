@@ -14,6 +14,16 @@
   padding-top: 141px;
   position: relative;
   z-index: 0;
+  @media (max-height: 500px) {
+    padding-top: 41px;
+    height: 100vh;
+  }
+  @media (max-width: $size-desktop + 200px) {
+    background-size: auto 100%;
+  }
+  @media (max-width: $size-tablet) {
+    margin-top: 0;
+  }
   > * {
     position: relative;
     z-index: 1;
@@ -43,6 +53,10 @@
       margin: 0;
       padding: 0;
       text-transform: uppercase;
+      @media (max-width: $size-mobile) {
+        font-size: 30px;
+        text-align: center;
+      }
     }
     h2 {
       color: #dedede;
@@ -52,6 +66,10 @@
       margin: 5px 0;
       padding: 0;
       text-transform: lowercase;
+      @media (max-width: $size-mobile) {
+        font-size: 18px;
+        text-align: center;
+      }
     }
     .el-button__green {
       margin-top: 20px;
