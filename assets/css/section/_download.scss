@@ -3,8 +3,17 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    @media (max-width: $size-mobile) {
+      align-items: stretch;
+      flex-direction: column;
+    }
     > * {
       margin: 0 10px;
+      @media (max-width: $size-mobile) {
+        box-sizing: border-box;
+        margin: 10px 0;
+        width: 100%;
+      }
     }
   }
   .content {

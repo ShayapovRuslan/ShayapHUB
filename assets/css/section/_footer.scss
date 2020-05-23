@@ -1,18 +1,37 @@
 #section-footer {
   background: #fff;
   padding: 45px 0;
+  @media (max-width: $size-mobile) {
+    padding: 20px 0;
+    text-align: center;
+  }
   .wrapper {
     display: flex;
     justify-self: space-between;
+    @media (max-width: $size-mobile) {
+      flex-direction: column;
+    }
   }
   .right-column {
     margin-left: auto;
+    @media (max-width: $size-mobile) {
+      margin-bottom: 20px;
+      margin-left: 0;
+      text-align: center;
+      order: 0;
+    }
   }
   .left-column {
+    @media (max-width: $size-mobile) {
+      order: 1;
+    }
     nav {
       ul {
         @extend %liststyle;
         display: flex;
+        @media (max-width: $size-mobile) {
+          justify-content: center;
+        }
         li {
           margin-left: 20px;
           padding-left: 22px;

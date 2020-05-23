@@ -6,6 +6,9 @@
   height: 80vh;
   justify-content: center;
   position: relative;
+  @media (max-width: $size-desktop + 200px) {
+    background-size: auto 100%;
+  }
   &:before,
   &:after {
     bottom: 0;
