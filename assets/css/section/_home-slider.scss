@@ -1,9 +1,6 @@
 #section-home-slider {
   .wrapper {
     align-items: stretch;
-    @media (max-width: $size-tablet) {
-      flex-direction: column;
-    }
   }
   .main-column {
     align-items: center;
@@ -15,26 +12,15 @@
     padding-top: 40px;
     text-align: center;
     width: $size-desktop * 0.25;
-    @media (max-width: $size-tablet) {
-      padding-top: 40px;
-      width: 100%;
-    }
   }
   .slide-column {
     margin-left: $size-desktop * 0.05;
     flex-grow: 1;
     flex-shrink: 0;
-    @media (max-width: $size-tablet) {
-      margin-left: 0;
-    }
     .navigation {
       height: 30px;
       margin-bottom: 10px;
       text-align: right;
-      @media (max-width: $size-tablet) {
-        display: none;
-      }
-
       button {
         background: none;
         border: none;
@@ -47,9 +33,16 @@
       }
     }
     .slide-items {
+      align-items: center;
+      display: flex;
       height: 245px;
+      justify-content: flex-start;
+      margin: 0 -10px;
       > * {
         height: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(50% - 20px);
         picture {
           box-sizing: border-box;
           display: block;

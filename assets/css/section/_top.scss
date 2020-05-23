@@ -4,9 +4,6 @@
   padding: 40px 0;
   position: relative;
   z-index: 2;
-  @media (max-width: $size-tablet) {
-    display: none;
-  }
   ul {
     @extend %liststyle;
     align-items: center;
