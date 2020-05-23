@@ -1,0 +1,16 @@
+#section-download {
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    > * {
+      margin: 0 10px;
+    }
+  }
+  .content {
+    .description {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}

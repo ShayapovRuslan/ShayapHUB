@@ -1,34 +1,206 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Моя страница</title>
-    <link rel="stylesheet" href="assets/plugins/fontawesome-free-5.13.0-web/css/all.min.css"/>
-    <link rel="stylesheet" href="assets/css/index.css"/>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
     <nav id="section-top">
-        <ul>
-            <li><a href="/">Главная</a></li>
-            <li><a href="/">PhotoApp</a></li>
-            <li><a href="/"><img src="assets/images/logo.png" alt="Логотип"></a></li>
-            <li><a href="/">Design</a></li>
-            <li><a href="/">Download</a></li>
-        </ul>
-        </nav>
-<section id="section-top">
-    <h1>Your life, a photo</h1>
-    <h2>Print your life in a simple foto</h2>
-    <a class="el-button_green" href="#">get started </a>
-    <nav class="social">
-        <ul>
-            <li>
-                <a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a>
-            </li>
-        </ul>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Photoapp</a></li>
+        <li class="logotype">
+          <a href="/"><img src="assets/images/logotype.png" alt="Логотип" /></a>
+        </li>
+        <li><a href="/">Design</a></li>
+        <li><a href="/">Download</a></li>
+      </ul>
     </nav>
-</body>
+    <section id="section-main">
+      <div class="center">
+        <h1>Your life, a photo</h1>
+        <h2>print yourlife in a simple photo</h2>
+        <a class="el-button__green" href="#">Get started</a>
+      </div>
+      <nav class="social">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <div class="line-block__gray">
+      <div
+        class="wrapper"
+        style="background-image: url('/assets/images/section-1.png');"
+      >
+        <div class="content">
+          <h3>Rappresent your life with a simple photo</h3>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              reiciendis cum harum magnam, libero dolore impedit perferendis
+              labore earum consequuntur eum consectetur ipsum error repudiandae!
+              Natus doloremque unde quod neque!
+            </p>
+            <p>
+              Odio totam, repellendus nemo, itaque alias numquam reiciendis
+              neque exercitationem, culpa aliquam consequatur ipsum dolor
+              tenetur corrupti autem error accusamus facilis aperiam est nisi
+              beatae maiores. Voluptate, corrupti hic. Natus?
+            </p>
+          </div>
+          <a class="el-button__green" href="#">Get started</a>
+        </div>
+      </div>
+    </div>
+    <div class="line-block">
+      <div
+        class="wrapper pos-right"
+        style="background-image: url('/assets/images/section-2.png');"
+      >
+        <div class="content">
+          <h3>Design</h3>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              reiciendis cum harum magnam, libero dolore impedit perferendis
+              labore earum consequuntur eum consectetur ipsum error repudiandae!
+              Natus doloremque unde quod neque!
+            </p>
+            <p>
+              Odio totam, repellendus nemo, itaque alias numquam reiciendis
+              neque exercitationem, culpa aliquam consequatur ipsum dolor
+              tenetur corrupti autem error accusamus facilis aperiam est nisi
+              beatae maiores. Voluptate, corrupti hic. Natus?
+            </p>
+          </div>
+          <a class="el-button__green" href="#">Get started</a>
+        </div>
+      </div>
+    </div>
+    <div class="line-block__gray" id="section-home-slider">
+      <div class="wrapper">
+        <div class="main-column">
+          <div class="image">
+            <img src="assets/images/photo.png" alt="Фото" />
+          </div>
+          <h3>Our Comunity</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+        <div class="slide-column">
+          <div class="navigation">
+            <button type="button">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button type="button">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="slide-items">
+            <a
+              href="assets/images/slides/slide-1.jpg"
+              title="Огород"
+              class="slide-item"
+            >
+              <picture>
+                <figure>
+                  <img
+                    src="assets/images/slides/slide-1_min.jpg"
+                    alt="Огород"
+                  />
+                </figure>
+              </picture>
+            </a>
+            <a
+              href="assets/images/slides/slide-2.jpg"
+              title="Компьютер"
+              class="slide-item"
+            >
+              <picture>
+                <figure>
+                  <img
+                    src="assets/images/slides/slide-2_min.jpg"
+                    alt="Компьютер"
+                  />
+                </figure>
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-subscribe">
+      <div class="wrapper">
+        <h3>Subscibe to us community</h3>
+        <form class="el-group">
+          <input type="email" required placeholder="your email" />
+          <button type="submit">
+            <i class="fas fa-check"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="line-block__gray" id="section-download">
+      <div class="wrapper">
+        <div class="content full center">
+          <h3>Download it</h3>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              reiciendis cum harum magnam, libero dolore impedit perferendis
+              labore earum consequuntur eum consectetur ipsum error repudiandae!
+              Natus doloremque unde quod neque!
+            </p>
+          </div>
+          <div class="buttons">
+            <a href="#" title="AppStore" class="el-group__green">
+              <span>Apple Store</span>
+              <span>
+                <i class="fab fa-apple"></i>
+              </span>
+            </a>
+            <a href="#" title="PlayStore" class="el-group__green">
+              <span>Play Store</span>
+              <span>
+                <i class="fab fa-android"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="section-footer">
+      <div class="wrapper">
+        <div class="left-column">
+          <nav>
+            <ul>
+              <li><a href="#">credits</a></li>
+              <li><a href="#">privace</a></li>
+              <li><a href="#">out teams</a></li>
+            </ul>
+          </nav>
+          <div class="copyright">
+            &copy; 2020; All rights resived
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="image">
+            <img src="assets/images/photo.png" alt="Фото" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
